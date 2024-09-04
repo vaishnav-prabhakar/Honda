@@ -1,9 +1,150 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive Container */
+.main, .body, .main_card, .second, .footer, .notice, .main_dealer {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+}
+
+/* Responsive Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.nav img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.red {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: #ff0000;
+    padding: 10px;
+}
+
+/* Responsive Cards */
+.main_card, .second {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card_1, .card_2, .card_3, .left, .right {
+    flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+    .card_1, .card_2, .card_3 {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+
+    .left, .right {
+        flex: 1 1 48%;
+    }
+}
+
+/* Responsive Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer div {
+    flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+    .footer div {
+        flex: 1 1 calc(20% - 20px);
+    }
+}
+
+.line-last {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 576px) {
+    .home a, .red a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
     margin: 0;
     padding: 0;
 }
 .main{
-    display: flex;    
+    display: flex;
+
 }
 .red{
     background-color: rgb(238, 0, 0);
@@ -27,7 +168,7 @@
     margin-bottom: 20px;
 }
 .body{
-    margin-left: 55px;
+    padding: 5em;
 }
 .nav{
     position: absolute;
@@ -232,4 +373,4 @@ h2{
 }
 .footer a:hover{
     color: rgb(133, 0, 0);
-}
+} */
